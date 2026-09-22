@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ventas Yupi Dilan · Recargas Free Fire</title>
+<meta name="theme-color" content="#0a0b12">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-icon">🛒</span><div><strong>VENTAS YUPI DILAN</strong><small>RECARGAS FREE FIRE</small></div></div>
+  <nav><a href="#inicio">Inicio</a><a href="#recargas">Recargas</a><a href="#pedidos">Mis pedidos</a><button onclick="adm()">Admin</button></nav>
+</header>
+<main>
+<section id="inicio" class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow"><span></span> RECARGAS FREE FIRE</div>
+    <h1>Tus diamantes.<br><b>Rápidos y fáciles.</b></h1>
+    <p>Elige tu recarga, coloca tu ID de Free Fire y envía tu comprobante. Tú compras, nosotros procesamos.</p>
+    <div class="hero-actions"><a class="btn primary" href="#recargas">Ver recargas <span>→</span></a><a class="btn ghost" href="#pedidos">Mis pedidos</a></div>
+    <div class="trust"><span>✓ Pago por transferencia</span><span>✓ Comprobante obligatorio</span><span>✓ Revisión manual</span></div>
+  </div>
+  <div class="hero-card">
+    <div class="glow"></div><div class="hero-card-top"><span>💎</span><small>MÁS PEDIDO</small></div>
+    <h3>1,166 💎</h3><div class="price">$130 <small>MXN</small></div><p>Recarga por ID</p><a href="#recargas" class="mini-btn">Comprar ahora</a>
+  </div>
+</section>
+<section id="recargas" class="section">
+  <div class="section-head"><div><div class="eyebrow"><span></span> TIENDA</div><h2>Elige tu recarga</h2></div><div class="secure">🔒 Compra protegida</div></div>
+  <div id="login" class="login-box"></div>
+  <div id="shop" hidden>
+    <div class="player-box"><div class="player-icon">🎮</div><div class="player-main"><strong>Primero verifica tu jugador</strong><span>Usaremos tu ID para identificar la cuenta antes de crear el pedido.</span><div class="player-row"><input id="pid" inputmode="numeric" placeholder="Escribe tu ID de Free Fire"><button onclick="check()">Verificar ID</button></div><p id="who"></p></div></div>
+    <div id="products"></div>
+  </div>
+</section>
+<section id="pedidos" class="section orders-section"><div class="section-head"><div><div class="eyebrow"><span></span> SEGUIMIENTO</div><h2>Mis pedidos</h2></div></div><div id="orders" class="orders-box">Inicia sesión para consultar tus pedidos.</div></section>
+</main>
+<footer><div class="brand"><span class="brand-icon">🛒</span><strong>VENTAS YUPI DILAN</strong></div><span>Recargas Free Fire · México</span></footer>
+<div id="modal" class="modal"><div class="modalbox"><button class="close" onclick="closeM()">×</button><div class="modal-head"><span>💳</span><div><small>ÚLTIMO PASO</small><h2>Completa tu pedido</h2></div></div><div id="pay"></div><form id="form"><label>📎 Comprobante de pago <small>JPG, PNG o PDF · máx. 10 MB</small></label><input id="file" type="file" accept=".jpg,.jpeg,.png,.pdf" required><button class="btn primary full-btn">Enviar pedido</button></form><div class="notice">⚠️ Tu recarga se procesa únicamente después de que Administración confirme el pago recibido.</div></div></div>
+<script src="app.js"></script>
+</body></html>
